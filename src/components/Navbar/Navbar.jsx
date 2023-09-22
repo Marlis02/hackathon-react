@@ -36,6 +36,8 @@ function NavScrollExample() {
               >
                 Product list
               </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="MyProducts" id="navbarScrollingDropdown">
               <NavDropdown.Item
                 onClick={() => {
                   navigate("/editproduct");
@@ -44,15 +46,15 @@ function NavScrollExample() {
               >
                 Edit product
               </NavDropdown.Item>
+              <NavDropdown.Item
+                onClick={() => {
+                  navigate("/createproduct");
+                }}
+                href="#action5"
+              >
+                Add product
+              </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link
-              onClick={() => {
-                navigate("/myproducts");
-              }}
-              style={{ color: "black" }}
-            >
-              MyProducts
-            </Nav.Link>
             <Nav.Link
               onClick={() => {
                 navigate("/categories");

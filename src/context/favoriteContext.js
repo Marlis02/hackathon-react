@@ -5,10 +5,10 @@ export const favoriteContext = React.createContext();
 const f = () => {
   console.log("favorite");
 };
-const favoriteContextProvider = ({ chidren }) => {
+const FavoriteContextProvider = ({ children }) => {
   return (
-    <favoriteContext.Provider value={f}>{chidren}</favoriteContext.Provider>
+    <favoriteContext.Provider value={f}>{children}</favoriteContext.Provider>
   );
 };
 
-export default favoriteContextProvider;
+export default FavoriteContextProvider;

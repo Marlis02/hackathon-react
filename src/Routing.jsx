@@ -10,6 +10,7 @@ import EditProduct from "./pages/EditProduct/EditProduct";
 import MyProducts from "./pages/MyProducts/MyProducts";
 import CreateCategory from "./pages/CreateCategory/CreateCategory";
 import CustomCard from "./components/Card/Card";
+import CreateProduct from "./pages/CreateProduct/CreateProduct";
 const PrivateRoutes = () => {
   const user = localStorage.getItem("email");
 
@@ -19,15 +20,16 @@ const PrivateRoutes = () => {
 const Routing = () => {
   return (
     <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route element={<PrivateRoutes />}>
         <Route path="*" element={<Loader />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
         <Route path="/products" element={<Products />} />
         <Route path="/editproduct" element={<EditProduct />} />
         <Route path="/myproducts" element={<MyProducts />} />
         <Route path="/categories" element={<CreateCategory />} />
+        <Route path="/createproduct" element={<CreateProduct />} />
       </Route>
     </Routes>
   );
