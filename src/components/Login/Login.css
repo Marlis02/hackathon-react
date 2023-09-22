@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-container {
+  width: 550px;
+  height: 400px;
+  background-color: rgba(128, 128, 128, 0.219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.sign-in-btn {
+  width: 80%;
+  margin-top: 20px;
+}

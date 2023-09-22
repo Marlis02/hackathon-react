@@ -1,7 +1,26 @@
 {
   "products": [],
   "categories": [],
-  "users": [],
+  "users": [
+    {
+      "email": "marlis@gamil.com",
+      "password": "marlis123",
+      "confirmPasword": "marlis123",
+      "id": 1
+    },
+    {
+      "email": "marlis@gamil.com",
+      "password": "marlis123",
+      "confirmPasword": "marlis123",
+      "id": 2
+    },
+    {
+      "email": "belek",
+      "password": "belek123",
+      "confirmPasword": "belek123",
+      "id": 3
+    }
+  ],
   "favorites": [],
   "cart": []
 }
