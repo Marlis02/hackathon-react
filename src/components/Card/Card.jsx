@@ -1,41 +1,73 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { PiShoppingCartSimpleBold } from "react-icons/pi";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { FiEdit3 } from "react-icons/fi";
+import "./style.css";
 
-const CustomCard = (product, onDelete) => {
+const CustomCard = ({
+  product,
+  isUserProducts,
+  onDelete,
+  detailPage,
+  productList,
+}) => {
   const navigate = useNavigate();
+  console.log(product);
+
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>{product.name}</Card.Title>
-        <Card.Text>
-          <div style={{ display: "flex", gap: "10px " }}>
-            <Button onClick={() => navigate("/products")}>Cancel</Button>
-          </div>
-        </Card.Text>
-        <Card.Img className="img-card " variant="top" src={product.image} />
-        <div style={{ display: "flex", gap: "10px " }}>
-          <Button
-            variant="primary"
-            onClick={() => navigate(`/product-detail/${product.id}`)}
-          >
-            Details
-          </Button>
-          <>
-            <Button variant="danger" onClick={() => onDelete(product.id)}>
-              Delete
-            </Button>
-            <Button
-              variant="warning "
-              onClick={() => navigate(`/edit-product/${product.id}`)}
-            >
-              Edit
-            </Button>
-          </>
+    <div>
+      <Card
+        className="card"
+        style={{ width: "320px", height: "500px", border: "none" }}
+      >
+        <div className="card-img-container" style={{ height: "320px" }}>
+          <Card.Img className="img-card " variant="top" src={product.image} />
         </div>
-      </Card.Body>
-    </Card>
+        <Card.Body className="card-body">
+          <Card.Text
+            style={{ marginBottom: "5px", fontSize: "18px", fontWeight: "500" }}
+          >
+            {product.price} $
+          </Card.Text>
+          <Card.Title
+            style={{ marginBottom: "5px", fontSize: "16px", color: "grey" }}
+          >
+            {product.description}
+          </Card.Title>
+          {/* <Card.Text>Category: {product.category}</Card.Text> */}
+          <div style={{ display: "flex", gap: "10px " }}>
+            {isUserProducts && (
+              <Button
+                variant="primary"
+                onClick={() => navigate(`/product-detail/${product.id}`)}
+              >
+                details
+              </Button>
+            )}
+
+            {isUserProducts && (
+              <>
+                <Button
+                  style={{ height: "45px" }}
+                  variant="danger"
+                  onClick={() => onDelete(product.id)}
+                >
+                  <RiDeleteBin6Line size={20} />
+                </Button>
+                <Button
+                  variant="warning "
+                  onClick={() => navigate(`/editproduct/${product.id}`)}
+                >
+                  <FiEdit3 size={20} />
+                </Button>
+              </>
+            )}
+          </div>
+        </Card.Body>
+      </Card>
+    </div>
   );
 };
 

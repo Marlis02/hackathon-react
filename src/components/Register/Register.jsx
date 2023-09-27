@@ -1,36 +1,51 @@
-import React, { useContext, useState } from "react";
-import { Button, Form, InputGroup } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { Button, Form, InputGroup, NavLink } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 import AuthContextProvider, { authContext } from "../../context/authContext";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPasword, setConfirmPassword] = useState("");
   const { handleRegister } = useContext(authContext);
+  const navigate = useNavigate();
 
-  const handleSumbit = () => {
+  const handleSumbit = async () => {
     const user = {
       email,
       password,
       confirmPasword,
     };
+
+    // Check if passwords match
+
     for (const key in user) {
       if (!user[key].trim()) {
-        return alert("Заполните все поля !");
+        return toast.error("Заполните все поля !");
       }
     }
+    if (password !== confirmPasword) {
+      return toast.error("Пароли не соавпадают!");
+    }
+
+    toast.success("Вы успешно зарегистрированы!");
+    await handleRegister(user);
     setEmail("");
     setPassword("");
     setConfirmPassword("");
-    handleRegister(user);
+    navigate("/login");
   };
-
   return (
     <div className="container">
       <div className="input-container">
         <h3>Sign up</h3>
-        <InputGroup className="mt-4 " style={{ width: "80%" }}>
+        <InputGroup
+          className="mt-4 "
+          style={{
+            width: "80%",
+          }}
+        >
           <Form.Control
             placeholder="email :"
             aria-describedby="inputGroup-sizing-sm"
@@ -56,7 +71,7 @@ const Register = () => {
           variant="primary"
           onClick={handleSumbit}
         >
-          Sign up
+          <NavLink>Sign up</NavLink>
         </Button>
         <p style={{ display: "inline" }}>
           Have a account? <Link to="/login">Sign in</Link>
