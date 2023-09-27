@@ -1,24 +1,144 @@
 {
-  "products": [],
-  "categories": [],
-  "users": [
+  "products": [
     {
-      "email": "marlis@gamil.com",
-      "password": "marlis123",
-      "confirmPasword": "marlis123",
+      "name": "belek loh",
+      "description": "iPhone 15 Pro Max, 512 ГБ, Blue Titanium",
+      "price": "1000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone15/15pro/blacktitanium/iphone_15_pro_max_black_titanium_pdp_image_position-1__ww-en-670x540.webp",
+      "category": "iPhone",
       "id": 1
     },
     {
-      "email": "marlis@gamil.com",
-      "password": "marlis123",
-      "confirmPasword": "marlis123",
+      "name": "iphone 13",
+      "description": "iPhone 14 Pro Max, 128 ГБ, Серебристый",
+      "price": "20000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14promax/silver/wwen_iphone14promax_q422_silver_pdp-images_position-1a-670x540.webp",
+      "category": "iPhone",
       "id": 2
     },
+    {
+      "name": "iPad",
+      "description": "Apple iPad Pro 11 (4-поколения) M2, 128 ГБ, Wi‑Fi, Серебристый",
+      "price": "1200",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/ipadpro11m2/ipad-pro-13-select-wifi-silver-202210-670x540.webp",
+      "category": "iPad",
+      "id": 3
+    },
+    {
+      "name": "Apple Watch Ultra 2",
+      "description": "Apple Watch Ultra 2 - поколения, титановый циферблат с оранжевым Ocean Band",
+      "price": "$799",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/ultra2gen/trailloop/orangebeige/apple_watch_ultra_2_cellular_49mm_titanium_beige_orange_trail_loop_pdp_image_position-1__en-us-670x540.webp",
+      "category": "Apple Watch",
+      "id": 5
+    },
+    {
+      "name": "Apple MacBook Pro 14.2",
+      "description": "Apple MacBook Pro 14.2\" M2 Pro (10С CPU/16С GPU) 16 ГБ, 512 ГБ \"Серый космос\"",
+      "price": "2100",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/macbookpro1416m2promax/spacegray/mbp16-spacegray-select-202301-670x540.webp",
+      "category": "MacBook",
+      "id": 6
+    },
+    {
+      "name": "AirPods 3",
+      "description": "Наушники AirPods (3‑го поколения)",
+      "price": "200",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/airpods3/116e3a5a-62db-41ed-bd46-0b687eb81d8f-670x540.webp",
+      "category": "AirPods",
+      "id": 7
+    },
+    {
+      "name": "Apple AirPods Max",
+      "description": "Наушники Apple AirPods Max Серый Космос",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/airpodsmax/81jqupkivrl._ac_sl1500_-670x540.webp",
+      "category": "AirPods",
+      "id": 8
+    },
+    {
+      "name": "Apple iPad mini 6",
+      "description": "Apple iPad mini 6, 256 ГБ, Wi-Fi, Пурпурный",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/mini6/ipad-mini-select-wifi-purple-202109_fmt_whh-670x540.webp",
+      "category": "iPad",
+      "id": 9
+    }
+  ],
+  "categories": [
+    {
+      "name": "iPhone",
+      "id": 1
+    },
+    {
+      "name": "iPad",
+      "id": 2
+    },
+    {
+      "name": "MacBook",
+      "id": 3
+    },
+    {
+      "name": "AirPods",
+      "id": 4
+    },
+    {
+      "name": "Apple Watch",
+      "id": 5
+    },
+    {
+      "name": "Accessories",
+      "id": 6
+    }
+  ],
+  "users": [
     {
       "email": "belek",
       "password": "belek123",
       "confirmPasword": "belek123",
+      "id": 2
+    },
+    {
+      "email": "marlis",
+      "password": "12345",
+      "confirmPasword": "12345",
       "id": 3
+    },
+    {
+      "email": "gg",
+      "password": "00",
+      "confirmPasword": "00",
+      "id": 4
+    },
+    {
+      "email": "belek",
+      "password": "123",
+      "confirmPasword": "123",
+      "id": 5
+    },
+    {
+      "email": "nusup",
+      "password": "1234",
+      "confirmPasword": "1234",
+      "id": 6
+    },
+    {
+      "email": "Marlis@gmail.com",
+      "password": "marlis123",
+      "confirmPasword": "marlis123",
+      "id": 7
+    },
+    {
+      "email": "kum",
+      "password": "111",
+      "confirmPasword": "111",
+      "id": 8
+    },
+    {
+      "email": "haviz",
+      "password": "12345",
+      "confirmPasword": "12345",
+      "id": 9
     }
   ],
   "favorites": [],
