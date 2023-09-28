@@ -12,6 +12,8 @@ const CustomCard = ({
   onDelete,
   detailPage,
   productList,
+  onFavorite,
+  favorites,
 }) => {
   const navigate = useNavigate();
   console.log(product);
@@ -22,7 +24,11 @@ const CustomCard = ({
         className="card"
         style={{ width: "320px", height: "500px", border: "none" }}
       >
-        <div className="card-img-container" style={{ height: "320px" }}>
+        <div
+          className="card-img-container"
+          style={{ height: "320px" }}
+          onClick={() => navigate(`/detail/${product.id}`)}
+        >
           <Card.Img className="img-card " variant="top" src={product.image} />
         </div>
         <Card.Body className="card-body">
@@ -38,15 +44,6 @@ const CustomCard = ({
           </Card.Title>
           {/* <Card.Text>Category: {product.category}</Card.Text> */}
           <div style={{ display: "flex", gap: "10px " }}>
-            {isUserProducts && (
-              <Button
-                variant="primary"
-                onClick={() => navigate(`/product-detail/${product.id}`)}
-              >
-                details
-              </Button>
-            )}
-
             {isUserProducts && (
               <>
                 <Button
