@@ -14,6 +14,7 @@ import CreateProduct from "./pages/CreateProduct/CreateProduct";
 import About from "./components/AboutUs/About";
 import Cart from "./pages/Cart/Cart";
 import Favorite from "./pages/Favorite/Favorite";
+import Detail from "./pages/DetailPage/Detail";
 const PrivateRoutes = () => {
   const user = localStorage.getItem("email");
 
@@ -36,6 +37,7 @@ const Routing = () => {
         <Route path="/createproduct" element={<CreateProduct />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/favorite" element={<Favorite />} />
+        <Route path="/detail/:id" element={<Detail />} />
       </Route>
     </Routes>
   );

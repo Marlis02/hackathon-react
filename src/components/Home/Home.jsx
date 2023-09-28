@@ -3,7 +3,8 @@ import { productContext } from "../../context/productContext";
 import "./Home.css";
 import CustomCard from "../Card/Card";
 import { useSearchParams } from "react-router-dom";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Image } from "react-bootstrap";
+import CustomPagination from "../Pagination/Pagination";
 
 const Home = () => {
   const { categories, getCategories } = useContext(productContext);
@@ -48,8 +49,8 @@ const Home = () => {
         }}
       >
         {categories
-          ? categories.map((item, index) => (
-              <div key={index} className="categories_item" style={{}}>
+          ? categories.map((item, id) => (
+              <div key={id} className="categories_item" style={{}}>
                 <p style={{ fontWeight: "600", fontSize: "16px" }}>
                   {item.name}
                 </p>
@@ -100,9 +101,20 @@ const Home = () => {
       <div className="products">
         <div className="product-list">
           {products
-            ? products.map((item) => <CustomCard product={item} />)
+            ? products.map((item, id) => <CustomCard key={id} product={item} />)
             : "Empty"}
         </div>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          height: "auto",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <CustomPagination />
       </div>
       <div
         className="image-grid"
@@ -116,22 +128,22 @@ const Home = () => {
           background: "black",
         }}
       >
-        <img
+        <Image
           style={{ width: "600px", justifyContent: "center", display: "flex" }}
           src="https://www.iphones.ru/wp-content/uploads/2020/10/0-3.jpg"
           alt="Image 1"
         />
-        <img
+        <Image
           style={{ width: "600px" }}
           src="https://media.gqmagazine.fr/photos/63d795475ed6874bf78c67ee/4:3/w_1199,h_899,c_limit/iPhone15-Wi-Fi_6E.jpg"
           alt="Image 2"
         />
-        <img
+        <Image
           style={{ width: "600px" }}
           src="https://cdn.mos.cms.futurecdn.net/67aUVTxHqNJV2eKpiakudU.jpg"
           alt="Image 3"
         />
-        <img
+        <Image
           style={{ width: "600px" }}
           src="https://blog.comfy.ua/wp-content/uploads/2020/10/Apple-iPhone-12-Pro-lidar.png"
           alt="Image 4"

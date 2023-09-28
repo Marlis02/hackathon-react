@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useContext, useEffect, useReducer } from "react";
+import React, { useContext, useReducer } from "react";
 export const productContext = React.createContext();
 export const useProduct = () => {
   return useContext(productContext);
@@ -13,7 +13,7 @@ const INIT_STATE = {
   products: [],
   oneProduct: null,
 };
-const LIMIT = 10;
+const LIMIT = 8;
 
 function reducer(state = INIT_STATE, action) {
   switch (action.type) {

@@ -4,6 +4,7 @@ import CustomCard from "../../components/Card/Card";
 import { productContext } from "../../context/productContext";
 import "./style.css";
 import { useSearchParams } from "react-router-dom";
+import CustomPagination from "../../components/Pagination/Pagination";
 
 const MyProducts = () => {
   const { products, getProducts, deleteProduct } = useContext(productContext);
@@ -33,6 +34,7 @@ const MyProducts = () => {
             ))
           : "Empty"}
       </div>
+      <CustomPagination />
     </div>
   );
 };
