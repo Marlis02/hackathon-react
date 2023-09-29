@@ -32,7 +32,7 @@ const MyProducts = () => {
           ? products.map((item) => (
               <CustomCard product={item} isUserProducts onDelete={onDelete} />
             ))
-          : "Empty"}
+          : "no Products"}
       </div>
       <CustomPagination />
     </div>

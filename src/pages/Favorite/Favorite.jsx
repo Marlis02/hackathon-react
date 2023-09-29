@@ -16,6 +16,7 @@ const Favorite = () => {
   useEffect(() => {
     getFavorites();
   }, []);
+
   return (
     <div className="fav_container">
       <h3>Favorite</h3>

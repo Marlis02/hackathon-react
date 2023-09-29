@@ -103,7 +103,7 @@ const CreateCategory = () => {
         >
           <h3>All categories</h3>
           {categories
-            ? categories.map(({ name, image, id }) => (
+            ? categories.map(({ name, id }) => (
                 <div
                   key={id}
                   style={{
