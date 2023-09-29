@@ -56,49 +56,66 @@ const EditProduct = () => {
   };
 
   return (
-    <div className="form-wrapper">
-      <h3>Edit Product</h3>
-      <Form>
-        <Form.Control
-          type="text"
-          placeholder="Ввеедите название"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <Form.Control
-          type="text"
-          placeholder="Введите описание"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-        <Form.Control
-          type="text"
-          placeholder="Цена"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-        />
-        <Form.Control
-          type="text"
-          placeholder="URL картинки"
-          value={image}
-          onChange={(e) => setImage(e.target.value)}
-        />
-        <Form.Select
-          onChange={(e) => setSelectedCategory(e.target.value)}
-          value={selectedCategory}
-        >
-          <option>Choose category</option>
-          {categories &&
-            categories.map((item) => (
-              <option value={item.name} key={item.id}>
-                {item.name}
-              </option>
-            ))}
-        </Form.Select>
-        <Button onClick={handleSubmit} className="outline-success">
-          Submit
-        </Button>
-      </Form>
+    <div
+      className="form-wrapper"
+      style={{
+        width: "100%",
+        height: "auto",
+        display: "flex",
+        alignItems: "center ",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
+      <h3 style={{ margin: "30px" }}>Edit Product</h3>
+      <div style={{ width: "80%" }}>
+        <Form>
+          <Form.Control
+            style={{ marginBottom: "10px" }}
+            type="text"
+            placeholder="Ввеедите название"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Form.Control
+            style={{ marginBottom: "10px" }}
+            type="text"
+            placeholder="Введите описание"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+          <Form.Control
+            style={{ marginBottom: "10px" }}
+            type="text"
+            placeholder="Цена"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+          />
+          <Form.Control
+            style={{ marginBottom: "10px" }}
+            type="text"
+            placeholder="URL картинки"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+          />
+          <Form.Select
+            style={{ marginBottom: "15px" }}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            value={selectedCategory}
+          >
+            <option>Choose category</option>
+            {categories &&
+              categories.map((item) => (
+                <option value={item.name} key={item.id}>
+                  {item.name}
+                </option>
+              ))}
+          </Form.Select>
+          <Button onClick={handleSubmit} className="outline-success">
+            Submit
+          </Button>
+        </Form>
+      </div>
     </div>
   );
 };

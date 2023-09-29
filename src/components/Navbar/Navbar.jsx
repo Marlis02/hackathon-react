@@ -30,7 +30,7 @@ function NavScrollExample() {
       style={{ borderBottom: "1px solid grey" }}
     >
       <Container fluid>
-        <Navbar.Brand href="#">Darkness</Navbar.Brand>
+        <Navbar.Brand href="#"> Apple</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

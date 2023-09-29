@@ -32,10 +32,6 @@ const Home = () => {
     );
   }, [serachParams]);
 
-  useEffect(() => {
-    // Этот useEffect отображает карточки в консоли, когда categories обновляется
-    console.log(categories);
-  }, [categories]);
   return (
     <div>
       <div
@@ -51,9 +47,7 @@ const Home = () => {
         {categories
           ? categories.map((item, id) => (
               <div key={id} className="categories_item" style={{}}>
-                <p style={{ fontWeight: "600", fontSize: "16px" }}>
-                  {item.name}
-                </p>
+                <p className="cat-home">{item.name}</p>
               </div>
             ))
           : "no categories"}
@@ -68,8 +62,8 @@ const Home = () => {
               alt="First slide"
             />
             <Carousel.Caption className="carousel-caption">
-              <h3>Вам также может понравиться</h3>
-              <p>iPhone 12 Pro Max</p>
+              {/* <h3>Вам также может понравиться</h3>
+              <p>iPhone 12 Pro Max</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item className="carousel-item">
@@ -79,8 +73,8 @@ const Home = () => {
               alt="Second slide"
             />
             <Carousel.Caption className="carousel-caption">
-              <h3>Вам также может понравиться</h3>
-              <p>iPhone 14 Pro</p>
+              {/* <h3>Вам также может понравиться</h3>
+              <p>iPhone 14 Pro</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item className="carousel-item">
@@ -90,8 +84,8 @@ const Home = () => {
               alt="Third slide"
             />
             <Carousel.Caption className="carousel-caption">
-              <h3>Apple A14 Bionic</h3>
-              <p>IOS 17</p>
+              {/* <h3>Apple A14 Bionic</h3>
+              <p>IOS 17</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -123,9 +117,9 @@ const Home = () => {
           justifyContent: "center",
           display: "flex",
           flexWrap: "wrap",
-          gap: "20px",
           marginTop: "50px",
           background: "black",
+          marginBottom: "50px",
         }}
       >
         <Image
@@ -149,6 +143,28 @@ const Home = () => {
           alt="Image 4"
         />
       </div>
+      {/* <div className="br">
+        <img
+          style={{ width: "500px", height: "300px", borderRadius: "20px" }}
+          src="https://i.pinimg.com/236x/52/2c/cb/522ccbc72c6dda7a7dd78be09b8779c1.jpg"
+          alt=""
+        />
+        <img
+          style={{ width: "500px", height: "300px", borderRadius: "20px" }}
+          src="https://i.pinimg.com/236x/86/37/04/863704c8461307834d594531f3a339ed.jpg"
+          alt=""
+        />
+        <img
+          style={{ width: "500px", height: "300px", borderRadius: "20px" }}
+          src="https://asiastore.kg/catalog/view/theme/default/image/brands/Beats.png"
+          alt=""
+        />
+        <img
+          style={{ width: "500px", height: "300px", borderRadius: "20px" }}
+          src="https://asiastore.kg/catalog/view/theme/default/image/brands/Masrhall.png"
+          alt=""
+        />
+      </div> */}
     </div>
   );
 };

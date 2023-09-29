@@ -1,0 +1,40 @@
+.footer-text {
+  color: white;
+}
+
+.links {
+  color: white;
+  font-size: 20px;
+}
+
+li {
+  margin-top: 15px;
+}
+
+footer {
+  background-color: rgb(33, 37, 41);
+  height: 350px;
+}
+
+@media (max-width: 450px) {
+  footer {
+    height: 450px;
+  }
+}
+
+@media (min-width: 550px) {
+  footer {
+    height: 550px;
+  }
+}
+
+@media (max-width: 780px) {
+  li {
+    display: none;
+  }
+  h5 {
+    display: none;
+  }
+}
+
+/* Add similar media queries for other screen widths as needed */

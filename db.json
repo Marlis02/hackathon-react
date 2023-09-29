@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "name": "belek loh",
+      "name": "iPhone",
       "description": "iPhone 15 Pro Max, 512 ГБ, Blue Titanium",
       "price": "1000",
       "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone15/15pro/blacktitanium/iphone_15_pro_max_black_titanium_pdp_image_position-1__ww-en-670x540.webp",
@@ -11,7 +11,7 @@
     {
       "name": "iphone 13",
       "description": "iPhone 14 Pro Max, 128 ГБ, Серебристый",
-      "price": "20000",
+      "price": "1000",
       "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14promax/silver/wwen_iphone14promax_q422_silver_pdp-images_position-1a-670x540.webp",
       "category": "iPhone",
       "id": 2
@@ -29,7 +29,7 @@
       "description": "Apple Watch Ultra 2 - поколения, титановый циферблат с оранжевым Ocean Band",
       "price": "$799",
       "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/ultra2gen/trailloop/orangebeige/apple_watch_ultra_2_cellular_49mm_titanium_beige_orange_trail_loop_pdp_image_position-1__en-us-670x540.webp",
-      "category": "Apple Watch",
+      "category": "Watch",
       "id": 5
     },
     {
@@ -221,7 +221,7 @@
       "description": "Apple Watch Series 8 GPS, 41мм, (PRODUCT)RED, Спортивный ремешок цвета (PRODUCT)RED",
       "price": "600$",
       "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/series8/red/mp7j3ref_vw_34fr%2Bwatch-45-alum-red-nc-8s_vw_34fr_wf_co_geo_gb-670x540.webp",
-      "category": "Apple Watch",
+      "category": "Watch",
       "id": 29
     },
     {
@@ -229,7 +229,7 @@
       "description": "Apple Watch Series 9 GPS, 41 мм, \"сияющая звезда\", спортивный браслет цвета \"сияющая звезда\"",
       "price": "1000",
       "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/series9/sportloop/starlight/apple_watch_series_9_gps_45mm_starlight_aluminum_starlight_sport_loop_pdp_image_position-1__en-us-670x540.webp",
-      "category": "Apple Watch",
+      "category": "Watch",
       "id": 30
     },
     {
@@ -237,7 +237,7 @@
       "description": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
       "price": "700",
       "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/applewatchse2/silver/mp6v3ref_vw_34fr%2Bwatch-40-alum-silver-nc-se_vw_34fr_wf_co_geo_gb-670x540.webp",
-      "category": "Apple Watch",
+      "category": "Watch",
       "id": 31
     },
     {
@@ -339,7 +339,7 @@
       "id": 4
     },
     {
-      "name": "Apple Watch",
+      "name": "Watch",
       "id": 5
     },
     {
@@ -399,13 +399,78 @@
   ],
   "favorites": [
     {
+      "name": "Apple Watch Series 9 GPS, 41 мм, \"сияющая звезда\", спортивный браслет цвета \"сияющая звезда\"",
+      "description": "Apple Watch Series 9 GPS, 41 мм, \"сияющая звезда\", спортивный браслет цвета \"сияющая звезда\"",
+      "price": "1000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/series9/sportloop/starlight/apple_watch_series_9_gps_45mm_starlight_aluminum_starlight_sport_loop_pdp_image_position-1__en-us-670x540.webp",
+      "category": "Apple Watch",
+      "id": 30
+    },
+    {
+      "name": "Apple AirPods Max",
+      "description": "Наушники Apple AirPods Max Серый Космос",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/airpodsmax/81jqupkivrl._ac_sl1500_-670x540.webp",
+      "category": "AirPods",
+      "id": 8
+    },
+    {
       "name": "iphone 13",
       "description": "iPhone 14 Pro Max, 128 ГБ, Серебристый",
       "price": "20000",
       "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14promax/silver/wwen_iphone14promax_q422_silver_pdp-images_position-1a-670x540.webp",
       "category": "iPhone",
-      "id": 1
+      "id": 2
+    },
+    {
+      "name": "Apple iPad mini 6",
+      "description": "Apple iPad mini 6, 256 ГБ, Wi-Fi, Пурпурный",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/mini6/ipad-mini-select-wifi-purple-202109_fmt_whh-670x540.webp",
+      "category": "iPad",
+      "id": 9
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "name": "Apple AirPods Max",
+      "description": "Наушники Apple AirPods Max Серый Космос",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/airpodsmax/81jqupkivrl._ac_sl1500_-670x540.webp",
+      "category": "AirPods",
+      "id": 8
+    },
+    {
+      "name": "iphone 13",
+      "description": "iPhone 14 Pro Max, 128 ГБ, Серебристый",
+      "price": "20000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14promax/silver/wwen_iphone14promax_q422_silver_pdp-images_position-1a-670x540.webp",
+      "category": "iPhone",
+      "id": 2
+    },
+    {
+      "name": "Apple iPad mini 6",
+      "description": "Apple iPad mini 6, 256 ГБ, Wi-Fi, Пурпурный",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/mini6/ipad-mini-select-wifi-purple-202109_fmt_whh-670x540.webp",
+      "category": "iPad",
+      "id": 9
+    },
+    {
+      "name": "Apple Watch Series 9 GPS, 41 мм, \"сияющая звезда\", спортивный браслет цвета \"сияющая звезда\"",
+      "description": "Apple Watch Series 9 GPS, 41 мм, \"сияющая звезда\", спортивный браслет цвета \"сияющая звезда\"",
+      "price": "1000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/series9/sportloop/starlight/apple_watch_series_9_gps_45mm_starlight_aluminum_starlight_sport_loop_pdp_image_position-1__en-us-670x540.webp",
+      "category": "Watch",
+      "id": 30
+    },
+    {
+      "name": "iPhone",
+      "description": "iPhone 15 Pro Max, 512 ГБ, Blue Titanium",
+      "price": "1000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone15/15pro/blacktitanium/iphone_15_pro_max_black_titanium_pdp_image_position-1__ww-en-670x540.webp",
+      "category": "iPhone",
+      "id": 1
+    }
+  ]
 }

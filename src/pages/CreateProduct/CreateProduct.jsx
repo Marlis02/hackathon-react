@@ -12,7 +12,6 @@ const CreateProduct = () => {
   const [image, setImage] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
 
-  console.log(categories, "skdfk");
   useEffect(() => {
     getCategories();
   }, []);
@@ -89,7 +88,7 @@ const CreateProduct = () => {
           >
             <option>Choose category</option>
             {categories &&
-              categories.map((item) => (
+              categories.map((item, id) => (
                 <option value={item.name} key={item.id}>
                   {item.name}
                 </option>

@@ -11,7 +11,7 @@ const INIT_STATE = {
   category: null,
   pages: 0,
   products: [],
-  oneProduct: null,
+  oneProduct: [],
 };
 const LIMIT = 8;
 

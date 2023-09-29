@@ -6,9 +6,10 @@ import AuthContextProvider from "./context/authContext";
 import FavoriteContextProvider from "./context/favoriteContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Footer from "./components/Footer/Footer";
 import ProductContextProvider from "./context/productContext";
 import "./App.css";
+import CartContextProvider from "./context/cartContext";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,11 +18,13 @@ function App() {
         <ToastContainer position="top-center" />
         <AuthContextProvider>
           <FavoriteContextProvider>
-            <BrowserRouter>
-              <Navbar />
-              <Routing />
-              {/* <Footer /> */}
-            </BrowserRouter>
+            <CartContextProvider>
+              <BrowserRouter>
+                <Navbar />
+                <Routing />
+                <Footer />
+              </BrowserRouter>
+            </CartContextProvider>
           </FavoriteContextProvider>
         </AuthContextProvider>
       </ProductContextProvider>

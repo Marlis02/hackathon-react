@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { PiShoppingCartSimpleBold } from "react-icons/pi";
@@ -16,7 +16,9 @@ const CustomCard = ({
   favorites,
 }) => {
   const navigate = useNavigate();
-  console.log(product);
+
+  const [heart, setHeart] = useState(false);
+  //--------------------favorite----------------------
 
   return (
     <div>
@@ -24,12 +26,13 @@ const CustomCard = ({
         className="card"
         style={{ width: "320px", height: "500px", border: "none" }}
       >
-        <div
-          className="card-img-container"
-          style={{ height: "320px" }}
-          onClick={() => navigate(`/detail/${product.id}`)}
-        >
-          <Card.Img className="img-card " variant="top" src={product.image} />
+        <div className="card-img-container" style={{ height: "320px" }}>
+          <Card.Img
+            className="img-card "
+            variant="top"
+            src={product.image}
+            onClick={() => navigate(`/detail/${product.id}`)}
+          />
         </div>
         <Card.Body className="card-body">
           <Card.Text
