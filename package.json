@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.5.0",
     "bootstrap": "^5.3.2",
-    "concurrently": "^8.2.1",
+    "concurrently": "^8.2.2",
     "json-server": "^0.17.3",
     "json-server-auth": "^2.1.0",
     "react": "^18.2.0",
@@ -21,10 +21,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run start-app\" \"npm run json-server\"",
+    "start-app": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json-server": "json-server --watch --port 8000 db.json"
   },
   "eslintConfig": {
     "extends": [

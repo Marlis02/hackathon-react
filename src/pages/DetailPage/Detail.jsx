@@ -16,7 +16,7 @@ import { BsBoxSeam } from "react-icons/bs";
 //--
 const Detail = () => {
   const { oneProduct, getProductById } = useContext(productContext);
-  console.log(oneProduct, "sdfj");
+  console.log(oneProduct, "aaaaaaaaaaaaaaaaaaaa");
   const { addFavoriteToStorage, favorites, getFavorites, removeFromFavorites } =
     useContext(favoriteContext);
   const { addCart, removeCart, getCart, cart } = useContext(CartContext);
@@ -33,13 +33,11 @@ const Detail = () => {
 
   ///--------------
 
-  console.log(favorites, "dfskfakfh");
   useEffect(() => {
     getProductById(id);
     getFavorites();
   }, [id]);
   // ------------------------
-  console.log(cart, "dfskfakfh");
   useEffect(() => {
     getProductById(id);
     getCart();

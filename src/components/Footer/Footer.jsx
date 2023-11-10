@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer
       className="page-footer font-small blue pt-4"
-      style={{ height: "auto" }}
+      style={{ height: "auto", marginTop: "50px" }}
     >
       <div
         className="container-fluid text-center text-md-left"
