@@ -1,4 +1,4 @@
-import "./Detail.css";
+import "./style.css";
 import React, { useContext, useEffect, useState } from "react";
 import { Button, Image } from "react-bootstrap";
 import { productContext } from "../../context/productContext";
