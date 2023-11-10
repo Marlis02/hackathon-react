@@ -447,38 +447,6 @@
       "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/ipadair4/silver/71qla-tib%2Bl._ac_sl1500_-670x540.webp",
       "category": "iPad",
       "id": 16
-    },
-    {
-      "name": "Apple Mac Studio",
-      "description": "Apple Mac Studio, Apple M1 Ultra (20C CPU/48C GPU), 64 ГБ, 1 ТБ SSD, 2022",
-      "price": "3000",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/macstudio/mac-studio-select-202203-670x540.webp",
-      "category": "MacBook",
-      "id": 24
-    },
-    {
-      "name": "iphone 13",
-      "description": "iPhone 14 Pro Max, 128 ГБ, Серебристый",
-      "price": "1000",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14promax/silver/wwen_iphone14promax_q422_silver_pdp-images_position-1a-670x540.webp",
-      "category": "iPhone",
-      "id": 2
-    },
-    {
-      "name": "Умная колонка Apple",
-      "description": "Умная колонка Apple HomePod mini Белый",
-      "price": "180",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/homepod/homepod-mini-select-white-202110_fv1-670x540.webp",
-      "category": "Accessories",
-      "id": 41
-    },
-    {
-      "name": "AirPods 3",
-      "description": "Наушники AirPods (3‑го поколения)",
-      "price": "200",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/airpods3/116e3a5a-62db-41ed-bd46-0b687eb81d8f-670x540.webp",
-      "category": "AirPods",
-      "id": 7
     }
   ],
   "cart": [
@@ -505,30 +473,6 @@
       "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14promax/silver/wwen_iphone14promax_q422_silver_pdp-images_position-1a-670x540.webp",
       "category": "iPhone",
       "id": 2
-    },
-    {
-      "name": "Умная колонка Apple",
-      "description": "Умная колонка Apple HomePod mini Белый",
-      "price": "180",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/homepod/homepod-mini-select-white-202110_fv1-670x540.webp",
-      "category": "Accessories",
-      "id": 41
-    },
-    {
-      "name": "iPad",
-      "description": "Apple iPad Pro 11 (4-поколения) M2, 128 ГБ, Wi‑Fi, Серебристый",
-      "price": "1200",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/ipadpro11m2/ipad-pro-13-select-wifi-silver-202210-670x540.webp",
-      "category": "iPad",
-      "id": 3
-    },
-    {
-      "name": "Apple Watch Ultra 2",
-      "description": "Apple Watch Ultra 2 - поколения, титановый циферблат с оранжевым Ocean Band",
-      "price": "$799",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/ultra2gen/trailloop/orangebeige/apple_watch_ultra_2_cellular_49mm_titanium_beige_orange_trail_loop_pdp_image_position-1__en-us-670x540.webp",
-      "category": "Watch",
-      "id": 5
     }
   ]
 }
