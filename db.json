@@ -319,6 +319,14 @@
       "image": "https://asiastore.kg/image/cachewebp/catalog/homepod/homepod-mini-select-white-202110_fv1-670x540.webp",
       "category": "Accessories",
       "id": 41
+    },
+    {
+      "name": "gg",
+      "description": "12132",
+      "price": "1000",
+      "image": "https://yt3.googleusercontent.com/3izDh0JET3RatvBRqVqfNzBUTdM8XEh2TU5UxQWe0Ja6li_pq6tlhjLs_jJPA6hW59nqKnsorVM=s900-c-k-c0x00ffffff-no-rj",
+      "category": "aibek",
+      "id": 42
     }
   ],
   "categories": [
@@ -437,42 +445,41 @@
       "password": "qwerty",
       "confirmPasword": "qwerty",
       "id": 16
-    }
-  ],
-  "favorites": [
+    },
     {
-      "name": "Apple iPad Air ",
-      "description": "Apple iPad Air (10.9 Gen 4 2020), 64 ГБ, Wi-Fi, Серебристый",
-      "price": "500",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/ipadair4/silver/71qla-tib%2Bl._ac_sl1500_-670x540.webp",
-      "category": "iPad",
-      "id": 16
+      "email": "marlis",
+      "password": "marlis123",
+      "confirmPasword": "marlis123",
+      "id": 17
+    },
+    {
+      "email": "aibek",
+      "password": "123",
+      "confirmPasword": "123",
+      "id": 18
+    },
+    {
+      "email": "beka",
+      "password": "1234",
+      "confirmPasword": "1234",
+      "id": 19
+    },
+    {
+      "email": "belek",
+      "password": "123",
+      "confirmPasword": "123",
+      "id": 20
     }
   ],
+  "favorites": [],
   "cart": [
     {
-      "name": "iPhone",
-      "description": "iPhone 15 Pro Max, 512 ГБ, Blue Titanium",
-      "price": "1000",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone15/15pro/blacktitanium/iphone_15_pro_max_black_titanium_pdp_image_position-1__ww-en-670x540.webp",
-      "category": "iPhone",
-      "id": 1
-    },
-    {
-      "name": "Apple Mac Studio",
-      "description": "Apple Mac Studio, Apple M1 Ultra (20C CPU/48C GPU), 64 ГБ, 1 ТБ SSD, 2022",
-      "price": "3000",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/macstudio/mac-studio-select-202203-670x540.webp",
-      "category": "MacBook",
-      "id": 24
-    },
-    {
-      "name": "iphone 13",
-      "description": "iPhone 14 Pro Max, 128 ГБ, Серебристый",
-      "price": "1000",
-      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14promax/silver/wwen_iphone14promax_q422_silver_pdp-images_position-1a-670x540.webp",
-      "category": "iPhone",
-      "id": 2
+      "name": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
+      "description": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
+      "price": "700",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/applewatchse2/silver/mp6v3ref_vw_34fr%2Bwatch-40-alum-silver-nc-se_vw_34fr_wf_co_geo_gb-670x540.webp",
+      "category": "Watch",
+      "id": 31
     }
   ]
 }

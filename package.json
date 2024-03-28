@@ -26,7 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json-server": "json-server --watch --port 8000 db.json"
+    "json-server": "json-server --watch --port 8000n db.json",
+    "deploy": "npx vercel"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "vercel": "^32.5.3"
   }
 }
