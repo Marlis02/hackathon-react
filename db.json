@@ -463,12 +463,6 @@
       "password": "1234",
       "confirmPasword": "1234",
       "id": 19
-    },
-    {
-      "email": "belek",
-      "password": "123",
-      "confirmPasword": "123",
-      "id": 20
     }
   ],
   "favorites": [],
