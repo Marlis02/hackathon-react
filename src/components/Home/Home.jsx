@@ -1,47 +1,47 @@
-import React, { useContext, useEffect, useState } from "react";
-import { productContext } from "../../context/productContext";
-import "./Home.css";
-import CustomCard from "../Card/Card";
-import { useSearchParams } from "react-router-dom";
-import { Carousel, Image } from "react-bootstrap";
-import CustomPagination from "../Pagination/Pagination";
+import React, { useContext, useEffect, useState } from 'react'
+import { productContext } from '../../context/productContext'
+import './Home.css'
+import CustomCard from '../Card/Card'
+import { useSearchParams } from 'react-router-dom'
+import { Carousel, Image } from 'react-bootstrap'
+import CustomPagination from '../Pagination/Pagination'
 
 const Home = () => {
-  const { categories, getCategories } = useContext(productContext);
-  const [categoriesFetched, setCategoriesFetched] = useState(false);
+  const { categories, getCategories } = useContext(productContext)
+  const [categoriesFetched, setCategoriesFetched] = useState(false)
   //---------------get products----
-  const { products, getProducts } = useContext(productContext);
-  const [serachParams] = useSearchParams();
+  const { products, getProducts } = useContext(productContext)
+  const [serachParams] = useSearchParams()
   useEffect(() => {
-    getProducts();
-  }, []);
+    getProducts()
+  }, [])
   //------------------------------
   useEffect(() => {
     // Вызывается только при первом рендеринге
     if (!categoriesFetched) {
-      getCategories();
-      setCategoriesFetched(true);
+      getCategories()
+      setCategoriesFetched(true)
     }
-  }, [categoriesFetched, getCategories]);
+  }, [categoriesFetched, getCategories])
 
   useEffect(() => {
     getProducts(
-      serachParams.get("search"),
-      serachParams.get("category"),
-      serachParams.get("_page")
-    );
-  }, [serachParams]);
+      serachParams.get('search'),
+      serachParams.get('category'),
+      serachParams.get('_page'),
+    )
+  }, [serachParams])
 
   return (
     <div>
       <div
         className="categories"
         style={{
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-evenly",
-          height: "80px",
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-evenly',
+          height: '80px',
         }}
       >
         {categories
@@ -50,13 +50,14 @@ const Home = () => {
                 <p className="cat-home">{item.name}</p>
               </div>
             ))
-          : "no categories"}
+          : 'no categories'}
       </div>
       {/* -------------------------------------------------------- */}
       <div>
         <Carousel>
           <Carousel.Item className="carousel-item">
             <img
+              style={{ height: '430px' }}
               className="d-block w-100"
               src="https://about.att.com/ecms/dam/snr/2020/November2020/StoryLevelBanner/11042020_iPhoneProMax_STORY_LEVEL_BANNER_1600x483.jpg"
               alt="First slide"
@@ -68,7 +69,8 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item className="carousel-item">
             <img
-              className="d-block w-100"
+              style={{ height: '430px' }}
+              className="d-block w-100 "
               src="https://about.att.com/ecms/dam/snr/2022/september2022/storylevelbanner/iconic_STORY_LEVEL_BANNER_1600x483.jpg"
               alt="Second slide"
             />
@@ -79,7 +81,8 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item className="carousel-item">
             <img
-              className="d-block w-100"
+              style={{ height: '430px' }}
+              className="d-block w-100 "
               src="https://rapticstrong.com/cdn/shop/collections/collection-banner_iPhone_Cases_Desktop.jpg?v=1625072679"
               alt="Third slide"
             />
@@ -96,16 +99,16 @@ const Home = () => {
         <div className="product-list">
           {products
             ? products.map((item, id) => <CustomCard key={id} product={item} />)
-            : "Empty"}
+            : 'Empty'}
         </div>
       </div>
       <div
         style={{
-          width: "100%",
-          height: "auto",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          width: '100%',
+          height: 'auto',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         <CustomPagination />
@@ -113,32 +116,32 @@ const Home = () => {
       <div
         className="image-grid"
         style={{
-          width: "100%",
-          justifyContent: "center",
-          display: "flex",
-          flexWrap: "wrap",
-          marginTop: "50px",
-          background: "black",
-          marginBottom: "50px",
+          width: '100%',
+          justifyContent: 'center',
+          display: 'flex',
+          flexWrap: 'wrap',
+          marginTop: '50px',
+          background: 'black',
+          marginBottom: '50px',
         }}
       >
         <Image
-          style={{ width: "600px", justifyContent: "center", display: "flex" }}
+          style={{ width: '600px', justifyContent: 'center', display: 'flex' }}
           src="https://www.iphones.ru/wp-content/uploads/2020/10/0-3.jpg"
           alt="Image 1"
         />
         <Image
-          style={{ width: "600px" }}
+          style={{ width: '600px' }}
           src="https://media.gqmagazine.fr/photos/63d795475ed6874bf78c67ee/4:3/w_1199,h_899,c_limit/iPhone15-Wi-Fi_6E.jpg"
           alt="Image 2"
         />
         <Image
-          style={{ width: "600px" }}
+          style={{ width: '600px' }}
           src="https://cdn.mos.cms.futurecdn.net/67aUVTxHqNJV2eKpiakudU.jpg"
           alt="Image 3"
         />
         <Image
-          style={{ width: "600px" }}
+          style={{ width: '600px' }}
           src="https://blog.comfy.ua/wp-content/uploads/2020/10/Apple-iPhone-12-Pro-lidar.png"
           alt="Image 4"
         />
@@ -166,7 +169,7 @@ const Home = () => {
         />
       </div> */}
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
