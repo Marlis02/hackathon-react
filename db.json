@@ -445,24 +445,6 @@
       "password": "qwerty",
       "confirmPasword": "qwerty",
       "id": 16
-    },
-    {
-      "email": "marlis",
-      "password": "marlis123",
-      "confirmPasword": "marlis123",
-      "id": 17
-    },
-    {
-      "email": "aibek",
-      "password": "123",
-      "confirmPasword": "123",
-      "id": 18
-    },
-    {
-      "email": "beka",
-      "password": "1234",
-      "confirmPasword": "1234",
-      "id": 19
     }
   ],
   "favorites": [],
