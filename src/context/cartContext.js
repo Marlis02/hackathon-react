@@ -1,19 +1,19 @@
 import axios from "axios";
 import React, { useReducer } from "react";
-export const favoriteContext = React.createContext();
+export const CartContext = React.createContext();
 //==========================================================
 const API = " http://localhost:8000";
 
 const INIT_STATE = {
-  favorites: [],
+  cart: [],
 };
 
 function reducer(state = INIT_STATE, action) {
   switch (action.type) {
-    case "GET_FAVORITES":
+    case "GET_CART":
       return {
         ...state,
-        favorites: action.payload,
+        cart: action.payload,
       };
     default:
       return state;
@@ -21,22 +21,22 @@ function reducer(state = INIT_STATE, action) {
 }
 
 //=============================================
-const FavoriteContextProvider = ({ children }) => {
+const CartContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
-  const addFavoriteToStorage = async (oneProduct) => {
+  const addCart = async (oneProduct) => {
     try {
-      await axios.post(`${API}/favorites`, oneProduct);
-      getFavorites();
+      await axios.post(`${API}/cart`, oneProduct);
+      getCart();
     } catch (error) {
       console.log(error);
     }
   };
 
-  const getFavorites = async () => {
+  const getCart = async () => {
     try {
-      const { data } = await axios(`${API}/favorites`);
+      const { data } = await axios(`${API}/cart`);
       dispatch({
-        type: "GET_FAVORITES",
+        type: "GET_CART",
         payload: data,
       });
     } catch (error) {
@@ -44,26 +44,26 @@ const FavoriteContextProvider = ({ children }) => {
     }
   };
 
-  const removeFromFavorites = async (id) => {
+  const removeCart = async (id) => {
     try {
-      await axios.delete(`${API}/favorites/${id}`);
-      getFavorites();
+      await axios.delete(`${API}/cart/${id}`);
+      getCart();
     } catch (error) {
       console.log(error);
     }
   };
   return (
-    <favoriteContext.Provider
+    <CartContext.Provider
       value={{
-        addFavoriteToStorage,
-        removeFromFavorites,
-        getFavorites,
-        favorites: state.favorites,
+        addCart,
+        removeCart,
+        getCart,
+        cart: state.cart,
       }}
     >
       {children}
-    </favoriteContext.Provider>
+    </CartContext.Provider>
   );
 };
 
-export default FavoriteContextProvider;
+export default CartContextProvider;

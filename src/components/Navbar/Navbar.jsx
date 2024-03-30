@@ -5,13 +5,32 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate } from "react-router-dom";
+import { FiHeart } from "react-icons/fi";
+import { PiUserBold } from "react-icons/pi";
+import { PiShoppingCartSimpleBold } from "react-icons/pi";
+import "./Navbar.css";
+import { useContext, useEffect, useState } from "react";
+import { authContext } from "../../context/authContext";
+import Search from "../Search/Search";
 
 function NavScrollExample() {
+  const [currentUser, setCurrentUser] = useState("");
   const navigate = useNavigate();
+  const { handleLogout } = useContext(authContext);
+  const isAdmin = currentUser;
+
+  useEffect(() => {
+    const user = localStorage.getItem("email");
+    setCurrentUser(user);
+  });
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar
+      expand="lg"
+      className="bg-body-tertiary"
+      style={{ borderBottom: "1px solid grey" }}
+    >
       <Container fluid>
-        <Navbar.Brand href="#">Darkness</Navbar.Brand>
+        <Navbar.Brand href="#"> Apple</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -37,60 +56,115 @@ function NavScrollExample() {
                 Product list
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="MyProducts" id="navbarScrollingDropdown">
-              <NavDropdown.Item
+            {isAdmin && (
+              <NavDropdown title="MyProducts" id="navbarScrollingDropdown">
+                <NavDropdown.Item
+                  onClick={() => {
+                    navigate("/myproducts");
+                  }}
+                  href="#action4"
+                >
+                  My products
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={() => {
+                    navigate("/createproduct");
+                  }}
+                  href="#action5"
+                >
+                  Add product
+                </NavDropdown.Item>
+              </NavDropdown>
+            )}
+            {isAdmin && (
+              <Nav.Link
                 onClick={() => {
-                  navigate("/editproduct");
+                  navigate("/categories");
                 }}
-                href="#action4"
+                style={{ color: "black" }}
               >
-                Edit product
-              </NavDropdown.Item>
-              <NavDropdown.Item
+                Categories
+              </Nav.Link>
+            )}
+            {isAdmin ? null : (
+              <Nav.Link
                 onClick={() => {
-                  navigate("/createproduct");
+                  navigate("/about");
                 }}
-                href="#action5"
+                style={{ color: "black" }}
               >
-                Add product
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link
-              onClick={() => {
-                navigate("/categories");
-              }}
-              style={{ color: "black" }}
-            >
-              Categories
-            </Nav.Link>
-            <NavDropdown title="Account" id="navbarScrollingDropdown">
-              <NavDropdown.Item
-                onClick={() => {
-                  navigate("/register");
-                }}
-                href="#action3"
-              >
-                Register
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                onClick={() => {
-                  navigate("/login");
-                }}
-                href="#action4"
-              >
-                login
-              </NavDropdown.Item>
-            </NavDropdown>
+                About us
+              </Nav.Link>
+            )}
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          {/* SEARCH */}
+          {isAdmin && <Search />}
+          {/* favorite & cart */}
+          <Nav.Link
+            className="heart"
+            onClick={() => {
+              navigate("/favorite");
+            }}
+          >
+            <span>
+              <FiHeart size={30} />
+            </span>
+          </Nav.Link>
+          <Nav.Link
+            className="cart"
+            onClick={() => {
+              navigate("/cart");
+            }}
+          >
+            <span>
+              <PiShoppingCartSimpleBold size={30} />
+            </span>
+          </Nav.Link>
+          {/* login */}
+          <Button
+            variant="secondary"
+            style={{
+              width: "auto",
+              height: "40px",
+              marginRight: "10px",
+            }}
+          >
+            {currentUser ? (
+              <p style={{ display: "flex", width: "auto", margin: "0" }}>
+                <PiUserBold size={25} style={{ marginRight: "5px" }} />
+                {currentUser}
+              </p>
+            ) : (
+              "no auth user"
+            )}
+          </Button>
+          {isAdmin ? (
+            <Button
+              onClick={() => {
+                handleLogout(navigate);
+              }}
+              className="login_btn"
+              style={{ height: "40px" }}
+            >
+              {/* <span>
+                <PiUserBold size={25} />
+              </span> */}
+              выйти
+            </Button>
+          ) : (
+            <Button
+              onClick={() => {
+                navigate("/login");
+              }}
+              className="login_btn"
+              style={{ height: "40px" }}
+            >
+              {/* <span>
+                <PiUserBold size={25} />
+              </span> */}
+              войти
+            </Button>
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>

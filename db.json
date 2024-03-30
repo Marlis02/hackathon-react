@@ -1,26 +1,469 @@
 {
-  "products": [],
-  "categories": [],
-  "users": [
+  "products": [
     {
-      "email": "marlis@gamil.com",
-      "password": "marlis123",
-      "confirmPasword": "marlis123",
+      "name": "iPhone",
+      "description": "iPhone 15 Pro Max, 512 ГБ, Blue Titanium",
+      "price": "0",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone15/15pro/blacktitanium/iphone_15_pro_max_black_titanium_pdp_image_position-1__ww-en-670x540.webp",
+      "category": "iPhone",
       "id": 1
     },
     {
-      "email": "marlis@gamil.com",
-      "password": "marlis123",
-      "confirmPasword": "marlis123",
+      "name": "iphone 13",
+      "description": "iPhone 14 Pro Max, 128 ГБ, Серебристый",
+      "price": "1000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14promax/silver/wwen_iphone14promax_q422_silver_pdp-images_position-1a-670x540.webp",
+      "category": "iPhone",
       "id": 2
     },
+    {
+      "name": "iPad",
+      "description": "Apple iPad Pro 11 (4-поколения) M2, 128 ГБ, Wi‑Fi, Серебристый",
+      "price": "1200",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/ipadpro11m2/ipad-pro-13-select-wifi-silver-202210-670x540.webp",
+      "category": "iPad",
+      "id": 3
+    },
+    {
+      "name": "Apple Watch Ultra 2",
+      "description": "Apple Watch Ultra 2 - поколения, титановый циферблат с оранжевым Ocean Band",
+      "price": "$799",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/ultra2gen/trailloop/orangebeige/apple_watch_ultra_2_cellular_49mm_titanium_beige_orange_trail_loop_pdp_image_position-1__en-us-670x540.webp",
+      "category": "Watch",
+      "id": 5
+    },
+    {
+      "name": "Apple MacBook Pro 14.2",
+      "description": "Apple MacBook Pro 14.2\" M2 Pro (10С CPU/16С GPU) 16 ГБ, 512 ГБ \"Серый космос\"",
+      "price": "2100",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/macbookpro1416m2promax/spacegray/mbp16-spacegray-select-202301-670x540.webp",
+      "category": "MacBook",
+      "id": 6
+    },
+    {
+      "name": "AirPods 3",
+      "description": "Наушники AirPods (3‑го поколения)",
+      "price": "200",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/airpods3/116e3a5a-62db-41ed-bd46-0b687eb81d8f-670x540.webp",
+      "category": "AirPods",
+      "id": 7
+    },
+    {
+      "name": "Apple AirPods Max",
+      "description": "Наушники Apple AirPods Max Серый Космос",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/airpodsmax/81jqupkivrl._ac_sl1500_-670x540.webp",
+      "category": "AirPods",
+      "id": 8
+    },
+    {
+      "name": "Apple iPad mini 6",
+      "description": "Apple iPad mini 6, 256 ГБ, Wi-Fi, Пурпурный",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/mini6/ipad-mini-select-wifi-purple-202109_fmt_whh-670x540.webp",
+      "category": "iPad",
+      "id": 9
+    },
+    {
+      "name": "iPhone 13 mini",
+      "description": "iPhone 13 mini,256 ГБ, (PRODUCT)RED",
+      "price": "800",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone13mini/210915120047010302-670x540.webp",
+      "category": "iPhone",
+      "id": 10
+    },
+    {
+      "name": "iPhone 13 Pro",
+      "description": "iPhone 13 Pro, 1 ТБ, Золотой",
+      "price": "1100",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone13pro/210915120039015160-670x540.webp",
+      "category": "iPhone",
+      "id": 11
+    },
+    {
+      "name": "iPhone 14 Plus",
+      "description": "iPhone 14 Plus, 128 ГБ, Синий",
+      "price": "1000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone14/iphone14plus/productred/wwen_iphone14plus_q422_productred_pdp_image_position-1a-670x540.webp",
+      "category": "iPhone",
+      "id": 12
+    },
+    {
+      "name": "iPhone 12",
+      "description": "iPhone 12, 256 GB black color",
+      "price": "680",
+      "image": "https://www.istore.kg/media/products/12-Black_Rfid3OW.webp",
+      "category": "iPhone",
+      "id": 13
+    },
+    {
+      "name": "iPhone 15 Pro",
+      "description": "iPhone 15 Pro, 128 ГБ, Black Titanium",
+      "price": "1400",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone15/15pro/blacktitanium/iphone_15_pro_max_black_titanium_pdp_image_position-1__ww-en-670x540.webp",
+      "category": "iPhone",
+      "id": 14
+    },
+    {
+      "name": "iPhone 13",
+      "description": "iPhone 13, 256 ГБ, Тёмная ночь",
+      "price": "800",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iphone/iphone13/210915120031628356-670x540.webp",
+      "category": "iPhone",
+      "id": 15
+    },
+    {
+      "name": "Apple iPad Air ",
+      "description": "Apple iPad Air (10.9 Gen 4 2020), 64 ГБ, Wi-Fi, Серебристый",
+      "price": "500",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/ipadair4/silver/71qla-tib%2Bl._ac_sl1500_-670x540.webp",
+      "category": "iPad",
+      "id": 16
+    },
+    {
+      "name": "Apple iPad ",
+      "description": "Apple iPad 10-поколения 256ГБ Wi-Fi Серебристый",
+      "price": "600",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/ipad10th/silver/apple-ipad-10-9-wi-fi-64gb-silver-10th-gen-2022-plansetdators-6-63500327256dc-670x540.webp",
+      "category": "iPad",
+      "id": 17
+    },
+    {
+      "name": "Apple MacBook Air",
+      "description": "Apple MacBook Air 15.3\" Apple M2 (8C CPU/10C GPU), 8 ГБ, 256 ГБ, Cерый Космос",
+      "price": "1300",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/macbookairm2/spacegray15/mba15-spacegray-gallery1-202306-670x540.webp",
+      "category": "MacBook",
+      "id": 18
+    },
+    {
+      "name": "Apple iMac",
+      "description": "Apple iMac 24\" M1 8 CPU 8 GPU 16 NE 16gbUM 256gb, Touch ID, серебристый",
+      "price": "1700",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/imac/24inch/silver/imac-24-silver-cto-hero-202104-670x540.webp",
+      "category": "MacBook",
+      "id": 19
+    },
+    {
+      "name": "Apple Mac mini",
+      "description": "Apple Mac mini M2 (8С CPU/10С GPU) 8 ГБ, 256 ГБ Серебристый",
+      "price": "900",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/macminim1pictures/m-670x540.webp",
+      "category": "MacBook",
+      "id": 20
+    },
+    {
+      "name": "APPLE Pro Display",
+      "description": "APPLE Pro Display XDR (Стандартное стекло, без подставки)",
+      "price": "2000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/displaypro/pro-display-gallery1-201909-670x540.webp",
+      "category": "MacBook",
+      "id": 21
+    },
+    {
+      "name": "APPLE Studio Display",
+      "description": "APPLE Studio Display (Нанотекстурное стекло, подставка с регулируемым наклоном и высотой)",
+      "price": "2100",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/studiodisplay/studio-display-og-202203-670x540.webp",
+      "category": "MacBook",
+      "id": 22
+    },
+    {
+      "name": "Powerology",
+      "description": "Powerology Сверхтонкий портативный монитор с разрешением Full HD и диагональю 15,6 дюйма",
+      "price": "200",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/accessories/for-ipad/powerology/15inchmonitor/powerology-ultra-slim-full-hd-portable-monitor--%281%29-670x540.webp",
+      "category": "MacBook",
+      "id": 23
+    },
+    {
+      "name": "Apple Mac Studio",
+      "description": "Apple Mac Studio, Apple M1 Ultra (20C CPU/48C GPU), 64 ГБ, 1 ТБ SSD, 2022",
+      "price": "3000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/mac/macstudio/mac-studio-select-202203-670x540.webp",
+      "category": "MacBook",
+      "id": 24
+    },
+    {
+      "name": "Наушники Apple AirPods Pro ",
+      "description": "Наушники Apple AirPods Pro (2‑го поколения) с поддержкой MagSafe",
+      "price": "400$",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/airpodspro2gn/mqd83-670x540.webp",
+      "category": "AirPods",
+      "id": 25
+    },
+    {
+      "name": "Наушники Apple EarPods Lightning Connector",
+      "description": "Наушники Apple EarPods Lightning Connector",
+      "price": "60$",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/earpods/mmtn2-1000x768-670x540.webp",
+      "category": "AirPods",
+      "id": 26
+    },
+    {
+      "name": "Наушники Apple EarPods Plug 3.5",
+      "description": "Наушники Apple EarPods Plug 3.5",
+      "price": "70$",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/earpods/510827_1-670x540.webp",
+      "category": "AirPods",
+      "id": 27
+    },
+    {
+      "name": "Наушники AirPods (2‑го поколения)",
+      "description": "Наушники AirPods (2‑го поколения)",
+      "price": "300$",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/airpods/190326150012817137-670x540.webp",
+      "category": "AirPods",
+      "id": 28
+    },
+    {
+      "name": "Apple Watch Series",
+      "description": "Apple Watch Series 8 GPS, 41мм, (PRODUCT)RED, Спортивный ремешок цвета (PRODUCT)RED",
+      "price": "600$",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/series8/red/mp7j3ref_vw_34fr%2Bwatch-45-alum-red-nc-8s_vw_34fr_wf_co_geo_gb-670x540.webp",
+      "category": "Watch",
+      "id": 29
+    },
+    {
+      "name": "Apple Watch Series 9 GPS, 41 мм, \"сияющая звезда\", спортивный браслет цвета \"сияющая звезда\"",
+      "description": "Apple Watch Series 9 GPS, 41 мм, \"сияющая звезда\", спортивный браслет цвета \"сияющая звезда\"",
+      "price": "1000",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/series9/sportloop/starlight/apple_watch_series_9_gps_45mm_starlight_aluminum_starlight_sport_loop_pdp_image_position-1__en-us-670x540.webp",
+      "category": "Watch",
+      "id": 30
+    },
+    {
+      "name": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
+      "description": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
+      "price": "700",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/applewatchse2/silver/mp6v3ref_vw_34fr%2Bwatch-40-alum-silver-nc-se_vw_34fr_wf_co_geo_gb-670x540.webp",
+      "category": "Watch",
+      "id": 31
+    },
+    {
+      "name": "Smart Folio для iPad Air (4-поколения) - Черный",
+      "description": "Smart Folio для iPad Air (4-поколения) - Черный",
+      "price": "100",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/ipad/chehly/190321150009948011-670x540.webp",
+      "category": "Accessories",
+      "id": 32
+    },
+    {
+      "name": "Чехол APPLE Clear Case с поддержкой MagSafe для iPhone 14 Plus Прозрачный",
+      "description": "Чехол APPLE Clear Case с поддержкой MagSafe для iPhone 14 Plus Прозрачный",
+      "price": "80",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/accessories/for-iphone/applecase/iphone14/iphone1414%2B/clearcase/mpu43-670x540.webp",
+      "category": "Accessories",
+      "id": 33
+    },
+    {
+      "name": "APPLE Magic Keyboard, с Touch ID русская раскладка",
+      "description": "APPLE Magic Keyboard, с Touch ID русская раскладка",
+      "price": "200",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/accessories/mac/keyboard/bezcifrovojpaneli/mk293rs-670x540.webp",
+      "category": "Accessories",
+      "id": 34
+    },
+    {
+      "name": "Elago AirPods Waterproof case",
+      "description": "Elago AirPods Waterproof case",
+      "price": "100",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/accessories/elago/jdvbjdsb-smart_crop-c0-5__0-5-750x750-70-670x540.webp",
+      "category": "Accessories",
+      "id": 35
+    },
+    {
+      "name": "Док-станция Belkin Boost Charge Pro 2-в-1 с MagSafe",
+      "description": "Док-станция Belkin Boost Charge Pro 2-в-1 с MagSafe",
+      "price": "150",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/belkin/wirelesscharger/hpl72-670x540.webp",
+      "category": "Accessories",
+      "id": 36
+    },
+    {
+      "name": "Док-станция Belkin Boost Charge 3-в-1 с MagSafe Черный",
+      "description": "Док-станция Belkin Boost Charge 3-в-1 с MagSafe Черный",
+      "price": "200",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/accessories/belkin/3-in-1wirelesschargingpadwithmagsafe/webdam.web.1000.1000-670x540.webp",
+      "category": "Accessories",
+      "id": 37
+    },
+    {
+      "name": "Кожаный брелок для ключей AirTag \"Темная ночь\"",
+      "description": "Кожаный брелок для ключей AirTag \"Темная ночь\"",
+      "price": "250",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/accessories/airtag/applecase/leatherkeyring/midnaight/mmf93-670x540.webp",
+      "category": "Accessories",
+      "id": 38
+    },
+    {
+      "name": "Porodo Lifestyle",
+      "description": "Porodo Lifestyle Водонепроницаемый Рюкзак Oxford + PU Порт USB-A - Черный",
+      "price": "60",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/accessories/mac/porodo/backpackpu/pd-bpwox-bk-a0-smart_crop-c0-5__0-5-750x750-70-670x540.webp",
+      "category": "Accessories",
+      "id": 39
+    },
+    {
+      "name": "Камера хаб",
+      "description": "Камера хаб Aqara Camera Hub G2H ",
+      "price": "100",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/accessories/aqara/aqarag2hprocamerach-c01/360_ac20220217142454210_1-670x540.webp",
+      "category": "Accessories",
+      "id": 40
+    },
+    {
+      "name": "Умная колонка Apple",
+      "description": "Умная колонка Apple HomePod mini Белый",
+      "price": "180",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/homepod/homepod-mini-select-white-202110_fv1-670x540.webp",
+      "category": "Accessories",
+      "id": 41
+    },
+    {
+      "name": "gg",
+      "description": "12132",
+      "price": "1000",
+      "image": "https://yt3.googleusercontent.com/3izDh0JET3RatvBRqVqfNzBUTdM8XEh2TU5UxQWe0Ja6li_pq6tlhjLs_jJPA6hW59nqKnsorVM=s900-c-k-c0x00ffffff-no-rj",
+      "category": "aibek",
+      "id": 42
+    }
+  ],
+  "categories": [
+    {
+      "name": "iPhone",
+      "id": 1
+    },
+    {
+      "name": "iPad",
+      "id": 2
+    },
+    {
+      "name": "MacBook",
+      "id": 3
+    },
+    {
+      "name": "AirPods",
+      "id": 4
+    },
+    {
+      "name": "Watch",
+      "id": 5
+    },
+    {
+      "name": "Accessories",
+      "id": 6
+    }
+  ],
+  "users": [
     {
       "email": "belek",
       "password": "belek123",
       "confirmPasword": "belek123",
+      "id": 2
+    },
+    {
+      "email": "marlis",
+      "password": "12345",
+      "confirmPasword": "12345",
       "id": 3
+    },
+    {
+      "email": "gg",
+      "password": "00",
+      "confirmPasword": "00",
+      "id": 4
+    },
+    {
+      "email": "belek",
+      "password": "123",
+      "confirmPasword": "123",
+      "id": 5
+    },
+    {
+      "email": "nusup",
+      "password": "1234",
+      "confirmPasword": "1234",
+      "id": 6
+    },
+    {
+      "email": "Marlis@gmail.com",
+      "password": "marlis123",
+      "confirmPasword": "marlis123",
+      "id": 7
+    },
+    {
+      "email": "kum",
+      "password": "111",
+      "confirmPasword": "111",
+      "id": 8
+    },
+    {
+      "email": "haviz",
+      "password": "12345",
+      "confirmPasword": "12345",
+      "id": 9
+    },
+    {
+      "email": "marli ",
+      "password": "12345678",
+      "confirmPasword": "12345678",
+      "id": 10
+    },
+    {
+      "email": "Marlis@gmail.com",
+      "password": "123456789",
+      "confirmPasword": "123456789",
+      "id": 11
+    },
+    {
+      "email": "Aibas",
+      "password": "12345",
+      "confirmPasword": "12345",
+      "id": 12
+    },
+    {
+      "email": "belek",
+      "password": "123456",
+      "confirmPasword": "123456",
+      "id": 13
+    },
+    {
+      "email": "kyal",
+      "password": "123",
+      "confirmPasword": "123",
+      "id": 14
+    },
+    {
+      "email": "hafizfullstack@gmail.com",
+      "password": "hafizhafiz",
+      "confirmPasword": "hafizhafiz",
+      "id": 15
+    },
+    {
+      "email": "m",
+      "password": "qwerty",
+      "confirmPasword": "qwerty",
+      "id": 16
     }
   ],
   "favorites": [],
-  "cart": []
+  "cart": [
+    {
+      "name": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
+      "description": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
+      "price": "700",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/applewatchse2/silver/mp6v3ref_vw_34fr%2Bwatch-40-alum-silver-nc-se_vw_34fr_wf_co_geo_gb-670x540.webp",
+      "category": "Watch",
+      "id": 31
+    },
+    {
+      "name": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
+      "description": "Apple Watch SЕ 2-пок. GPS, 40мм, Серебристый, Спортивный ремешок белого цвета",
+      "price": "700",
+      "image": "https://asiastore.kg/image/cachewebp/catalog/iwatch/applewatchse2/silver/mp6v3ref_vw_34fr%2Bwatch-40-alum-silver-nc-se_vw_34fr_wf_co_geo_gb-670x540.webp",
+      "category": "Watch",
+      "id": 31
+    }
+  ]
 }
