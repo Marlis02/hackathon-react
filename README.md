@@ -1,4 +1,4 @@
-# Getting Started with gg React App
+# Getting Started with gg 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
